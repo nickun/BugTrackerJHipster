@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6</TargetFramework>
+        <RootNamespace>BugTracker.Infrastructure</RootNamespace>
+        <OutputType>Library</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection"  />
+        <PackageReference Include="Serilog"  />
+        <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore"  />
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql"  />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools"  />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\BugTrackerJHipster.Domain\BugTrackerJHipster.Domain.csproj" />
+        <ProjectReference Include="..\BugTrackerJHipster.Dto\BugTrackerJHipster.Dto.csproj" />
+        <ProjectReference Include="..\BugTrackerJHipster.Crosscutting\BugTrackerJHipster.Crosscutting.csproj" />
+    </ItemGroup>
+
+</Project>
